@@ -50,7 +50,7 @@ After installing Python or Git, **close and reopen PowerShell** so it finds them
 
 ```powershell
 cd $HOME
-git clone https://github.com/<github-user>/ScreenQA.git
+git clone https://github.com/sthasis100/ScreenQA.git
 cd ScreenQA
 ```
 
