@@ -1,0 +1,7 @@
+# Extra tools for DEVELOPING ScreenQA (testing + packaging).
+# Install with:   python -m pip install -r requirements-dev.txt
+# The first line pulls in everything from requirements.txt as well.
+-r requirements.txt
+
+pytest==9.1.1           # runs our automated tests (Step 17)
+pyinstaller==6.22.3     # turns the app into a Windows .exe (Step 19)

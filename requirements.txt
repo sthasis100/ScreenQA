@@ -1,0 +1,28 @@
+# ScreenQA - the packages the app needs to RUN.
+# Install with:   python -m pip install -r requirements.txt
+# Versions are pinned (==) to the exact versions that were tested together.
+
+# GUI toolkit (Qt for Python). "Essentials" = only the core Qt modules,
+# which keeps the final .exe much smaller than the full PySide6 package.
+PySide6-Essentials==6.11.2
+
+# Official AI SDKs
+google-genai==2.25.0    # Google Gemini (free) - Google's own library, works with new "AQ." keys
+anthropic==1.8.0        # Claude (optional, paid)
+openai==3.19.2          # any OpenAI-compatible service (optional, e.g. a local model later)
+
+# Makes Python trust the same certificates Windows trusts (needed when antivirus
+# software such as Avast, or a school/work network, inspects secure connections)
+truststore==0.10.4
+
+# Reads the API key from a .env file so it never lives in source code
+python-dotenv==1.2.3
+
+# Windows' built-in OCR engine (offline text recognition, nothing extra to install)
+winrt-runtime==3.2.1
+winrt-Windows.Foundation==3.2.1
+winrt-Windows.Foundation.Collections==3.2.1
+winrt-Windows.Globalization==3.2.1
+winrt-Windows.Graphics.Imaging==3.2.1
+winrt-Windows.Media.Ocr==3.2.1
+winrt-Windows.Storage.Streams==3.2.1

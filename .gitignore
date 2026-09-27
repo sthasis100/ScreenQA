@@ -1,0 +1,25 @@
+# Files that must never be shared or committed to Git
+
+# Virtual environment (big, machine-specific, re-creatable)
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Secrets - real API keys live here
+.env
+
+# PyInstaller output (Step 19)
+build/
+dist/
+
+# Test cache
+.pytest_cache/
+
+# Temporary files, logs and personal editor settings
+*.tmp
+*.log
+Thumbs.db
+.vscode/
+.idea/
